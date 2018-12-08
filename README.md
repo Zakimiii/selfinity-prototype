@@ -40,6 +40,14 @@ $ pod install
 
 <br>
 
+### Firebase
+
+自身のgoogleアカウントでFirebaseに登録し、projectを作成しそのprojectにこのiosアプリを導入してください。
+Firebase連携がまだの方は[こちら](https://firebase.google.com/docs/ios/setup?hl=ja)から試してください<br>
+
+また**GoogleService-Staging-Info.plist**と命名して、Firebase連携させればStagingスキーマも起動しますのでお試してくださいませ。
+
+
 ### Locale
 
  以下のパスにあるStrings Fileを使用してください。
