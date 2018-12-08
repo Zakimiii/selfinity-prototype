@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrentAxeView" customModule="selfinity" customModuleProvider="target">
+            <connections>
+                <outlet property="borderView" destination="laA-I8-p43" id="BIY-Cf-3KE"/>
+                <outlet property="circleView" destination="6CX-Ly-bvA" id="TfD-En-FMR"/>
+                <outlet property="timeLabel" destination="8VY-Va-coy" id="lgO-oO-RbJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="z53-Ox-Vcs">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="15"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8VY-Va-coy">
+                    <rect key="frame" x="0.0" y="0.0" width="23.5" height="15"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.64798113260000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="laA-I8-p43">
+                    <rect key="frame" x="43.5" y="7" width="331.5" height="1"/>
+                    <color key="backgroundColor" red="1" green="0.64798113260000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="NHv-ml-k9s"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6CX-Ly-bvA">
+                    <rect key="frame" x="55.5" y="3.5" width="8" height="8"/>
+                    <color key="backgroundColor" red="1" green="0.64798113260000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="8" id="erx-EC-JAJ"/>
+                        <constraint firstAttribute="height" constant="8" id="oIz-Q8-lB2"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8VY-Va-coy" firstAttribute="leading" secondItem="mJi-Bt-2fO" secondAttribute="leading" id="2Bi-xi-foc"/>
+                <constraint firstItem="8VY-Va-coy" firstAttribute="bottom" secondItem="mJi-Bt-2fO" secondAttribute="bottom" id="D40-Zb-RXe"/>
+                <constraint firstItem="6CX-Ly-bvA" firstAttribute="centerY" secondItem="z53-Ox-Vcs" secondAttribute="centerY" id="FGt-8J-wbE"/>
+                <constraint firstItem="laA-I8-p43" firstAttribute="leading" secondItem="8VY-Va-coy" secondAttribute="trailing" constant="20" id="OY7-gh-dsD"/>
+                <constraint firstItem="laA-I8-p43" firstAttribute="centerY" secondItem="z53-Ox-Vcs" secondAttribute="centerY" id="RyJ-pV-V8k"/>
+                <constraint firstItem="6CX-Ly-bvA" firstAttribute="leading" secondItem="8VY-Va-coy" secondAttribute="trailing" constant="32" id="Y9A-Mk-sQK"/>
+                <constraint firstItem="laA-I8-p43" firstAttribute="trailing" secondItem="mJi-Bt-2fO" secondAttribute="trailing" id="hQ8-iX-jpy"/>
+                <constraint firstItem="8VY-Va-coy" firstAttribute="top" secondItem="mJi-Bt-2fO" secondAttribute="top" id="iVZ-Mv-EYz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="mJi-Bt-2fO"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+</document>

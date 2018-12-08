@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SearchTableViewCell" customModule="selfinity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabelLabel" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2V-oh-BSY">
+                        <rect key="frame" x="20" y="12" width="158.5" height="19.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQj-IU-4q9">
+                        <rect key="frame" x="238.5" y="8.5" width="61.5" height="26.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="61.5" id="mtM-t5-sMS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
+                        <color key="textColor" red="0.85490196080000003" green="0.64705882349999999" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbG-Zg-37i">
+                        <rect key="frame" x="183.5" y="8.5" width="52" height="26.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="52" id="BXg-Pu-lUu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.64798113260000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lbG-Zg-37i" firstAttribute="leading" secondItem="n2V-oh-BSY" secondAttribute="trailing" constant="5" id="8ZD-NV-wlC"/>
+                    <constraint firstItem="n2V-oh-BSY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Cjm-YP-wIA"/>
+                    <constraint firstItem="KQj-IU-4q9" firstAttribute="leading" secondItem="lbG-Zg-37i" secondAttribute="trailing" constant="3" id="Hk3-Ba-Tze"/>
+                    <constraint firstItem="lbG-Zg-37i" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LPQ-2b-57a"/>
+                    <constraint firstAttribute="trailing" secondItem="KQj-IU-4q9" secondAttribute="trailing" constant="20" id="WZA-Am-8FE"/>
+                    <constraint firstItem="n2V-oh-BSY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dRx-zW-yp0"/>
+                    <constraint firstAttribute="bottom" secondItem="n2V-oh-BSY" secondAttribute="bottom" constant="12" id="fR2-av-Hq5"/>
+                    <constraint firstItem="n2V-oh-BSY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="phT-IW-WBd"/>
+                    <constraint firstItem="lbG-Zg-37i" firstAttribute="height" secondItem="KQj-IU-4q9" secondAttribute="height" id="yLH-Dv-0AK"/>
+                    <constraint firstItem="lbG-Zg-37i" firstAttribute="centerY" secondItem="KQj-IU-4q9" secondAttribute="centerY" id="yoJ-sh-OKe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="creditLabel" destination="KQj-IU-4q9" id="wod-WL-yrm"/>
+                <outlet property="creditTitleLabel" destination="lbG-Zg-37i" id="QRk-Mu-TRt"/>
+                <outlet property="titleLabel" destination="n2V-oh-BSY" id="KeV-vN-bmY"/>
+            </connections>
+            <point key="canvasLocation" x="108.8" y="37.781109445277366"/>
+        </tableViewCell>
+    </objects>
+</document>

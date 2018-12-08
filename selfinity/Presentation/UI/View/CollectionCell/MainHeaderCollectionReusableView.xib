@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainHeaderCollectionReusableView" customModule="selfinity" customModuleProvider="target">
+            <connections>
+                <outlet property="baseView" destination="OrI-uF-tC4" id="3CH-a0-Rhw"/>
+                <outlet property="titleLabel" destination="MRs-eG-ZpX" id="uvG-XO-ivR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tIX-v7-bos">
+            <rect key="frame" x="0.0" y="0.0" width="488" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OrI-uF-tC4">
+                    <rect key="frame" x="0.0" y="0.0" width="488" height="77"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRs-eG-ZpX">
+                    <rect key="frame" x="20" y="16.5" width="448" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="QBr-vA-qI1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="44"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="MRs-eG-ZpX" firstAttribute="centerY" secondItem="tIX-v7-bos" secondAttribute="centerY" id="0Td-ZM-PSH"/>
+                <constraint firstItem="S9M-5V-P5Y" firstAttribute="trailing" secondItem="OrI-uF-tC4" secondAttribute="trailing" id="Y4S-Dz-vJL"/>
+                <constraint firstItem="OrI-uF-tC4" firstAttribute="leading" secondItem="S9M-5V-P5Y" secondAttribute="leading" id="ZOe-4I-xNA"/>
+                <constraint firstItem="OrI-uF-tC4" firstAttribute="top" secondItem="S9M-5V-P5Y" secondAttribute="top" id="cyP-YG-0uM"/>
+                <constraint firstItem="MRs-eG-ZpX" firstAttribute="leading" secondItem="S9M-5V-P5Y" secondAttribute="leading" constant="20" id="iBP-BG-fZy"/>
+                <constraint firstItem="OrI-uF-tC4" firstAttribute="bottom" secondItem="S9M-5V-P5Y" secondAttribute="bottom" id="kN8-HK-FME"/>
+                <constraint firstItem="S9M-5V-P5Y" firstAttribute="trailing" secondItem="MRs-eG-ZpX" secondAttribute="trailing" constant="20" id="npM-Xa-gB9"/>
+                <constraint firstItem="MRs-eG-ZpX" firstAttribute="centerX" secondItem="tIX-v7-bos" secondAttribute="centerX" id="rCo-13-bGy"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="S9M-5V-P5Y"/>
+            <point key="canvasLocation" x="-222.40000000000001" y="-54.422788605697157"/>
+        </collectionReusableView>
+    </objects>
+</document>

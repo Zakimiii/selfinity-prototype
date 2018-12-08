@@ -1,0 +1,91 @@
+/* 
+  Localizable.strings
+  selfinity
+
+  Created by Apple on 2018/10/05.
+  Copyright © 2018年 Apple. All rights reserved.
+*/
+"loginErrorText" = "The account or password are incorrect. Please try again.";
+
+"mainTabText0" = "Home";
+"mainTabText1" = "Think";
+"mainTabText2" = "Memo";
+"mainTabText3" = "Schedule";
+"mainTabText4" = "Activity";
+
+"homeSection" = "Home";
+"goalSection" = "Goal";
+"stepSection" = "Step";
+"taskSection" = "Task";
+"dreamSection" = "Dream";
+
+"thinkStart" = "Start";
+"thinkNew" = "Let's think new your plan based on your interest!";
+"thinkFromGoal" = "Let's think your plan based on your goal!";
+"thinkFromStep" = "Let's think your plan based on your dairy routin!";
+"thinkYourPlan" = "Let's improve your plan!";
+"interest?" = "What your interesting?";
+"result" = "Search result";
+"thinkGoal" = "Let's think your goal";
+"thinkGoalDetail" = "Let's write current your goal!";
+"thinkGoalDetailEx" = "Let's write current your goal!\n(Ex)\nI will make SNS application that can release App Store by December .";
+"thinkStep" = "Let's think the way to acheive the goal";
+"thinkStepDetailEx" = "Let's write the way to acheive the goal!\n(Ex)\nI will do programing SNS application in 3 hours everyday .";
+"thinkStepDetail" = "Let's write the way to acheive the goal!";
+"thinkGoalPlaceholder" = "Please enter your goal";
+"thinkStepPlaceholder" = "Please enter the way to acheive the goal";
+"thinkGenerateTask" = "Create Tasks";
+"forAchiveGoal" = "You will do the berow ways to achieve the above goal";
+"forAchiveTask" = "You will do the berow tasks to achieve the above ways for goal";
+
+
+"subject" = "What, What you do";
+"verb" = "How do";
+"timeBound" = "By when";
+"measurable" = "How much";
+"often" = "How often";
+
+"scheduleSection" = "Schedule";
+"dairySection" = "Dairy";
+"taskSection" = "Task";
+
+"prediction" = "Prediction";
+
+"ALL" = "ALL";
+
+"save" = "save";
+"cancel" = "cancel";
+"newFolder" = "New Folder";
+"newFile" = "New File";
+"newFolderPlaceholder" = "Please enter this folder name";
+"newFilePlaceholder" = "Let's write some thing!";
+"name" = "Name";
+
+"selectChat" = "Choose your think";
+
+"validateAllPlaceholder" = "Please enter all text field";
+
+"newEvent" = "New Event";
+
+"title" = "Title";
+"reminder" = "Reminder";
+"alerm" = "Date and time";
+"repeat" = "Repeat";
+"span" = "How much time?";
+"alert" = "Notification";
+"where" = "Place";
+"tag" = "tag";
+"memo" = "memo";
+"seccess" = "Seccess";
+"fail" = "Fail";
+"done" = "Done";
+"complete" = "Complete";
+"next" = "Next";
+"back" = "Back";
+
+"congratulation" = "Congratulation";
+"forRemindGenerateText" = "Don't you want to create Reminder Automatically?";
+
+"yourGoal" = "Your Goal : ";
+"toAchive" = "Achive Way : ";
+

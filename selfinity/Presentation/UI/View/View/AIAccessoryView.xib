@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AIAccessoryView" customModule="selfinity" customModuleProvider="target">
+            <connections>
+                <outlet property="optionButton" destination="UyG-dv-UtS" id="RXe-At-9b6"/>
+                <outlet property="tableView" destination="C9q-54-GKl" id="Wo7-KZ-9sI"/>
+                <outlet property="titleImage" destination="y6k-uo-dAm" id="Ioh-tJ-lyV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dPd-YV-Szc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="I2J-1Y-i4W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="siri" translatesAutoresizingMaskIntoConstraints="NO" id="y6k-uo-dAm">
+                                <rect key="frame" x="10" y="10" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="y6k-uo-dAm" secondAttribute="height" multiplier="1:1" id="LXM-QR-peL"/>
+                                    <constraint firstAttribute="width" constant="44" id="S9d-tr-uIH"/>
+                                    <constraint firstAttribute="height" constant="44" id="jpr-bg-qHH"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C9q-54-GKl">
+                                <rect key="frame" x="64" y="10" width="301" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UyG-dv-UtS" customClass="OptionButton" customModule="selfinity" customModuleProvider="target">
+                                <rect key="frame" x="15" y="69" width="34" height="36"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="gear"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="UyG-dv-UtS" firstAttribute="top" secondItem="y6k-uo-dAm" secondAttribute="bottom" constant="15" id="3dN-v9-0Pu"/>
+                            <constraint firstItem="y6k-uo-dAm" firstAttribute="leading" secondItem="I2J-1Y-i4W" secondAttribute="leading" constant="10" id="D2v-b3-8H7"/>
+                            <constraint firstAttribute="bottom" secondItem="C9q-54-GKl" secondAttribute="bottom" constant="10" id="FvJ-Fj-1Nu"/>
+                            <constraint firstItem="y6k-uo-dAm" firstAttribute="top" secondItem="I2J-1Y-i4W" secondAttribute="top" constant="10" id="JlR-yp-fB8"/>
+                            <constraint firstAttribute="bottom" secondItem="UyG-dv-UtS" secondAttribute="bottom" constant="15" id="QKW-Kz-Pld"/>
+                            <constraint firstItem="C9q-54-GKl" firstAttribute="top" secondItem="I2J-1Y-i4W" secondAttribute="top" constant="10" id="aNs-cm-Seh"/>
+                            <constraint firstItem="UyG-dv-UtS" firstAttribute="leading" secondItem="I2J-1Y-i4W" secondAttribute="leading" constant="15" id="gGH-JV-vKv"/>
+                            <constraint firstAttribute="trailing" secondItem="C9q-54-GKl" secondAttribute="trailing" constant="10" id="gQG-er-Th7"/>
+                            <constraint firstItem="C9q-54-GKl" firstAttribute="leading" secondItem="y6k-uo-dAm" secondAttribute="trailing" constant="10" id="hJa-ch-Zdc"/>
+                            <constraint firstItem="C9q-54-GKl" firstAttribute="leading" secondItem="UyG-dv-UtS" secondAttribute="trailing" constant="15" id="yh1-t8-7CG"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dPd-YV-Szc" secondAttribute="bottom" id="PDk-0k-he5"/>
+                <constraint firstItem="dPd-YV-Szc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZAr-Fq-dSJ"/>
+                <constraint firstAttribute="trailing" secondItem="dPd-YV-Szc" secondAttribute="trailing" id="ibz-un-hUf"/>
+                <constraint firstItem="dPd-YV-Szc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="sW9-lq-WRx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="205.59999999999999" y="-77.361319340329842"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gear" width="256" height="256"/>
+        <image name="siri" width="580" height="580"/>
+    </resources>
+</document>

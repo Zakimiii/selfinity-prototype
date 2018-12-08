@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BEJ-bw-4p6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Schedule View Controller-->
+        <scene sceneID="ly0-7P-Gid">
+            <objects>
+                <viewController id="BEJ-bw-4p6" customClass="ScheduleViewController" customModule="selfinity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lg4-Ez-vav">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VoX-zT-3Ma" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="20" width="375" height="391"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="391" id="tO6-zN-geE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
+                                        <color key="value" red="1" green="0.64798113260000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="todaySelectionColor">
+                                        <color key="value" red="1" green="0.64798113260000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="eventDefaultColor">
+                                        <color key="value" red="0.85490196080000003" green="0.64705882349999999" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="eventSelectionColor">
+                                        <color key="value" red="0.85490196080000003" green="0.64705882349999999" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
+                                        <color key="value" red="0.85490196080000003" green="0.64705882349999999" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="pagingEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showsScopeHandle" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scrollEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="headerTitleTextSize">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="weekdayTextSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleTextSize">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allowsSelection" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allowsMultipleSelection" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderType">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="headerDateFormat" value="yyyy/M"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="apg-ZW-EQ3">
+                                <rect key="frame" x="0.0" y="411" width="375" height="256"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6H-ti-lye">
+                                <rect key="frame" x="0.0" y="19" width="375" height="2"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="WKc-Er-WKm"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F45-v6-zXl" customClass="ActionView" customModule="selfinity" customModuleProvider="target">
+                                <rect key="frame" x="305" y="597" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CNl-mx-nIq"/>
+                                    <constraint firstAttribute="width" constant="50" id="ywR-HL-Dq6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="apg-ZW-EQ3" firstAttribute="leading" secondItem="tEV-RT-6PU" secondAttribute="leading" id="7zO-d7-xuv"/>
+                            <constraint firstItem="VoX-zT-3Ma" firstAttribute="leading" secondItem="tEV-RT-6PU" secondAttribute="leading" id="EIy-Q0-e1F"/>
+                            <constraint firstItem="apg-ZW-EQ3" firstAttribute="top" secondItem="VoX-zT-3Ma" secondAttribute="bottom" id="IIH-Aa-ATJ"/>
+                            <constraint firstItem="apg-ZW-EQ3" firstAttribute="trailing" secondItem="tEV-RT-6PU" secondAttribute="trailing" id="Kvn-fG-dU0"/>
+                            <constraint firstItem="tEV-RT-6PU" firstAttribute="trailing" secondItem="F45-v6-zXl" secondAttribute="trailing" constant="20" id="LjX-jk-XnD"/>
+                            <constraint firstItem="tEV-RT-6PU" firstAttribute="trailing" secondItem="h6H-ti-lye" secondAttribute="trailing" id="ZZ7-uZ-Kew"/>
+                            <constraint firstItem="tEV-RT-6PU" firstAttribute="bottom" secondItem="F45-v6-zXl" secondAttribute="bottom" constant="20" id="asx-ic-YPY"/>
+                            <constraint firstItem="h6H-ti-lye" firstAttribute="top" secondItem="tEV-RT-6PU" secondAttribute="top" constant="-1" id="ej8-YL-C3L"/>
+                            <constraint firstItem="VoX-zT-3Ma" firstAttribute="top" secondItem="tEV-RT-6PU" secondAttribute="top" id="fvg-u3-HY5"/>
+                            <constraint firstItem="h6H-ti-lye" firstAttribute="leading" secondItem="tEV-RT-6PU" secondAttribute="leading" id="iJy-YV-Vbu"/>
+                            <constraint firstAttribute="bottom" secondItem="apg-ZW-EQ3" secondAttribute="bottom" id="vzB-hP-GsZ"/>
+                            <constraint firstItem="VoX-zT-3Ma" firstAttribute="trailing" secondItem="tEV-RT-6PU" secondAttribute="trailing" id="ykO-s9-8NP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tEV-RT-6PU"/>
+                    </view>
+                    <connections>
+                        <outlet property="actionView" destination="F45-v6-zXl" id="tQj-A1-zjW"/>
+                        <outlet property="calenderView" destination="VoX-zT-3Ma" id="PeX-Q9-GQX"/>
+                        <outlet property="calenderViewHeight" destination="tO6-zN-geE" id="IRX-WI-ghn"/>
+                        <outlet property="tableView" destination="apg-ZW-EQ3" id="vDR-Mm-C9N"/>
+                        <segue destination="ezo-YR-TEz" kind="presentation" identifier="toCreate" id="cEu-iF-o9u"/>
+                        <segue destination="ezo-YR-TEz" kind="presentation" identifier="toEdit" id="vkM-sm-S30"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EH8-rf-WQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="336.80000000000001" y="-328.78560719640183"/>
+        </scene>
+        <!--Reminder-->
+        <scene sceneID="7IF-Hm-aJZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Reminder" id="ezo-YR-TEz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6EE-gG-BD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1242" y="-334"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="vkM-sm-S30"/>
+    </inferredMetricsTieBreakers>
+</document>

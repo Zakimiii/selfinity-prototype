@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CusutomizeButton" customModule="selfinity" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="Zlf-IX-q0L" id="VZN-4c-Y8O"/>
+                <outlet property="gradationView" destination="BCS-he-KT0" id="h29-tc-Lhc"/>
+                <outlet property="image" destination="V1G-mT-Jkf" id="mfM-4s-3BD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCS-he-KT0" customClass="GradationView" customModule="selfinity" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="170" height="35"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="a74-nz-RRL"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                            <color key="value" red="1" green="0.64798113260000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                            <color key="value" red="0.85490196080000003" green="0.64705882349999999" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zlf-IX-q0L">
+                    <rect key="frame" x="0.0" y="0.0" width="170" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="feM-la-JKw"/>
+                        <constraint firstAttribute="width" constant="170" id="oTW-eB-S3g"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                    <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Cusutomize">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gear" translatesAutoresizingMaskIntoConstraints="NO" id="V1G-mT-Jkf">
+                    <rect key="frame" x="16" y="6.5" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="V1G-mT-Jkf" secondAttribute="height" multiplier="1:1" id="H3P-8e-FYW"/>
+                        <constraint firstAttribute="height" constant="22" id="Kzu-oZ-KRt"/>
+                        <constraint firstAttribute="width" constant="22" id="sbO-2b-BxV"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="BCS-he-KT0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="2k2-qI-nvm"/>
+                <constraint firstItem="V1G-mT-Jkf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="FcK-D2-2Ry"/>
+                <constraint firstItem="BCS-he-KT0" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="HF4-ze-dAw"/>
+                <constraint firstItem="Zlf-IX-q0L" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Q9J-jn-biu"/>
+                <constraint firstItem="Zlf-IX-q0L" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="SSK-L7-yMn"/>
+                <constraint firstItem="V1G-mT-Jkf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="emN-0H-3ic"/>
+                <constraint firstItem="BCS-he-KT0" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="jWv-2v-Q84"/>
+                <constraint firstItem="BCS-he-KT0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="oV0-7d-Log"/>
+                <constraint firstItem="Zlf-IX-q0L" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="p3Q-Ys-XH3"/>
+                <constraint firstItem="Zlf-IX-q0L" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="uDZ-x0-pr8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-57.600000000000001" y="135.38230884557723"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gear" width="256" height="256"/>
+    </resources>
+</document>

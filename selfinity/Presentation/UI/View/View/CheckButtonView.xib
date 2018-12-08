@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckButtonView" customModule="selfinity" customModuleProvider="target">
+            <connections>
+                <outlet property="baseView" destination="p9I-JC-bxa" id="d6V-q7-unE"/>
+                <outlet property="button" destination="ro4-QW-K84" id="CZG-kn-c5t"/>
+                <outlet property="otherView" destination="E4B-M1-1rO" id="q0C-tN-WCg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4B-M1-1rO">
+                    <rect key="frame" x="15" y="15" width="14" height="14"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p9I-JC-bxa">
+                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ro4-QW-K84">
+                            <rect key="frame" x="4" y="4" width="36" height="36"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="checkmark"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.64798113260000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="4EP-cb-TJ0" firstAttribute="trailing" secondItem="ro4-QW-K84" secondAttribute="trailing" constant="4" id="4kv-zB-WhM"/>
+                        <constraint firstItem="4EP-cb-TJ0" firstAttribute="bottom" secondItem="ro4-QW-K84" secondAttribute="bottom" constant="4" id="FNd-Yf-mzB"/>
+                        <constraint firstItem="ro4-QW-K84" firstAttribute="leading" secondItem="4EP-cb-TJ0" secondAttribute="leading" constant="4" id="RUF-je-aP1"/>
+                        <constraint firstAttribute="width" secondItem="p9I-JC-bxa" secondAttribute="height" multiplier="1:1" id="WUR-W8-2SX"/>
+                        <constraint firstItem="ro4-QW-K84" firstAttribute="top" secondItem="4EP-cb-TJ0" secondAttribute="top" constant="4" id="zXe-PX-guu"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="4EP-cb-TJ0"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="p9I-JC-bxa" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="6mg-0X-Nuh"/>
+                <constraint firstItem="E4B-M1-1rO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="B3k-iT-nfq"/>
+                <constraint firstItem="p9I-JC-bxa" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="BUk-6r-de8"/>
+                <constraint firstAttribute="bottom" secondItem="E4B-M1-1rO" secondAttribute="bottom" constant="15" id="EBk-cR-E8d"/>
+                <constraint firstItem="p9I-JC-bxa" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Fre-h1-S29"/>
+                <constraint firstItem="p9I-JC-bxa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="GMC-n5-Qd5"/>
+                <constraint firstItem="E4B-M1-1rO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="T15-oG-IiH"/>
+                <constraint firstAttribute="trailing" secondItem="E4B-M1-1rO" secondAttribute="trailing" constant="15" id="eWT-qQ-FUr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="52.799999999999997" y="48.575712143928037"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkmark" width="13" height="11"/>
+    </resources>
+</document>

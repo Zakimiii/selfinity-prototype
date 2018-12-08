@@ -1,0 +1,89 @@
+/* 
+  Localizable.strings
+  selfinity
+
+  Created by Apple on 2018/10/05.
+  Copyright © 2018年 Apple. All rights reserved.
+*/
+"loginErrorText" = "アカウント、またはパスワードが正しくありません。もう一度ご確認ください。";
+
+"mainTabText0" = "ホーム";
+"mainTabText1" = "シンキング";
+"mainTabText2" = "メモ";
+"mainTabText3" = "スケジュール";
+"mainTabText4" = "アクティビティー";
+
+"homeSection" = "ホーム";
+"goalSection" = "目標";
+"stepSection" = "達成方法";
+"taskSection" = "すること";
+"dreamSection" = "夢";
+
+"thinkStart" = "スタート";
+"thinkNew" = "興味・関心あるものから新しいプランを立てる！";
+"thinkFromGoal" = "現在持っている目標から新しいプランを考える！";
+"thinkFromStep" = "日々の行動をもとに新しいプランを考える";
+"thinkYourPlan" = "既存のプランを改善する!";
+"interest?" = "何に興味がある？";
+"result" = "検索結果";
+"thinkGoal" = "目標を考える";
+"thinkGoalDetail" = "今持ってる目標を記入しましょう！";
+"thinkGoalDetailEx" = "今持ってる目標を記入しましょう！\n(例)\n料理アプリを12月までにApp Storeにリリースできるくらいに完成させる";
+"thinkStep" = "達成方法を考える";
+"thinkStepDetail" = "達成方法を記入しましょう！";
+"thinkStepDetailEx" = "達成方法を記入しましょう！\n(例)\nアプリ制作を毎日一日三時間取り組む。";
+"thinkGoalPlaceholder" = "目標を入力してください";
+"thinkStepPlaceholder" = "達成方法を入力してください";
+"thinkGenerateTask" = "タスクの作成";
+"forAchiveGoal" = "という目標を達成するために、以下の達成方法を実行することを計画しました。";
+"forAchiveTask" = "目標達成のために上記の方法を攻略するために、以下のタスクをスケジュールに設定します。";
+
+"subject" = "何を, どういう(する)ことを";
+"verb" = "どうする";
+"timeBound" = "いつまでに";
+"measurable" = "どのくらい";
+"often" = "どのくらいの周期で";
+
+"scheduleSection" = "スケジュール";
+"dairySection" = "日記";
+"taskSection" = "すること";
+
+"prediction" = "候補";
+
+"ALL" = "全て";
+
+"save" = "保存";
+"cancel" = "キャンセル";
+"newFolder" = "新規フォルダ";
+"newFile" = "新規ファイル";
+"newFolderPlaceholder" = "このフォルダの名前を入力してください。";
+"newFilePlaceholder" = "何か書いてみよう";
+"name" = "名前";
+
+"selectChat" = "発言を選んでください";
+
+"validateAllPlaceholder" = "全ての入力欄に記入してください";
+
+"newEvent" = "新規イベント";
+
+"title" = "タイトル";
+"reminder" = "リマインダー";
+"alerm" = "日時";
+"span" = "何時(分)間";
+"repeat" = "繰り返し";
+"alert" = "通知";
+"where" = "場所";
+"tag" = "タグ";
+"memo" = "メモ";
+"seccess" = "成功";
+"fail" = "失敗";
+"done" = "完了";
+"complete" = "完了";
+"next" = "次へ";
+"back" = "戻る";
+
+"congratulation" = "おめでとうございます！";
+"forRemindGenerateText" = "リマインダーの自動生成も行いますか？";
+
+"yourGoal" = "目標:";
+"toAchive" = "達成方法:";

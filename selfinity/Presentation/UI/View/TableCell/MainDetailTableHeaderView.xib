@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MainDetailTableHeaderView" customModule="selfinity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="135"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="Bx5-OQ-pAw">
+                    <rect key="frame" x="20" y="10" width="295" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="DlW-we-I48"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fm9-XZ-0Y0">
+                    <rect key="frame" x="20" y="51" width="295" height="74"/>
+                    <string key="text">LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel</string>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fm9-XZ-0Y0" firstAttribute="top" secondItem="Bx5-OQ-pAw" secondAttribute="bottom" constant="10" id="068-fa-0fn"/>
+                <constraint firstItem="Bx5-OQ-pAw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="19b-eD-fCa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Bx5-OQ-pAw" secondAttribute="trailing" constant="20" id="5MQ-Zf-J67"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fm9-XZ-0Y0" secondAttribute="bottom" constant="10" id="5hk-Hl-U2O"/>
+                <constraint firstItem="fm9-XZ-0Y0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="NRy-jJ-ZH0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fm9-XZ-0Y0" secondAttribute="trailing" constant="20" id="Y32-fe-hkj"/>
+                <constraint firstItem="Bx5-OQ-pAw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="yNV-VD-sXL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="detailLabel" destination="fm9-XZ-0Y0" id="0Ji-fr-8fl"/>
+                <outlet property="titleLabel" destination="Bx5-OQ-pAw" id="irw-qo-MAG"/>
+            </connections>
+            <point key="canvasLocation" x="53.600000000000001" y="80.50974512743629"/>
+        </view>
+    </objects>
+</document>
